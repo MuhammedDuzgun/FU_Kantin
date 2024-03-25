@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_1"
+        android:checked="true"
+        android:title="Haber"
+        />
+
+    <item
+        android:id="@+id/item_2"
+        android:title="Sinema"
+        android:icon="@drawable/ic_share_entry"
+        />
+
+    <item
+        android:id="@+id/item_3"
+        android:title="Bilim"
+        />
+
+    <item
+        android:id="@+id/item_4"
+        android:title="Eğitim"
+        />
+
+    <item
+        android:id="@+id/item_5"
+        android:title="Müzik"
+        />
+
+    <item
+        android:id="@+id/item_6"
+        android:title="Edebiyat"
+        />
+
+    <item
+        android:id="@+id/item_7"
+        android:title="Ekonomi"
+        />
+
+    <item
+        android:id="@+id/item_8"
+        android:title="Tarih"
+        />
+
+    <item
+        android:id="@+id/item_9"
+        android:title="Yeme-İçme"
+        />
+
+    <item
+        android:id="@+id/item_10"
+        android:title="İlişkiler"
+        />
+
+    <item
+        android:id="@+id/item_11"
+        android:title="Teknoloji"
+        />
+
+    <item
+        android:id="@+id/item_12"
+        android:title="Siyaset"
+        />
+
+    <item
+        android:id="@+id/item_13"
+        android:title="Sanat"
+        />
+
+    <item
+        android:id="@+id/item_14"
+        android:title="Moda"
+        />
+
+    <item
+        android:id="@+id/item_15"
+        android:title="Otomativ"
+        />
+
+    <item
+        android:id="@+id/item_16"
+        android:title="Magazin"
+        />
+
+    <item
+        android:id="@+id/item_17"
+        android:title="Spor"
+        />
+
+    <item
+        android:id="@+id/item_18"
+        android:title="Sağlık"
+        />
+
+    <item
+        android:id="@+id/item_19"
+        android:title="Oyun"
+        />
+
+    <item
+        android:id="@+id/item_20"
+        android:title="Anket"
+        />
+
+    <item
+        android:id="@+id/item_21"
+        android:title="Programlama"
+        />
+
+    <item
+        android:id="@+id/item_22"
+        android:title="Televizyon"
+        />
+
+    <item
+        android:id="@+id/item_23"
+        android:title="Seyehat"
+        />
+
+    <item
+        android:id="@+id/item_24"
+        android:title="Havacılık"
+        />
+
+    <item
+        android:id="@+id/item_25"
+        android:title="Fırat Üniversitesi"
+        />
+
+    <item
+        android:id="@+id/item_26"
+        android:title="Duyuru"
+        />
+
+    <item
+        android:id="@+id/item_27"
+        android:title="Diğer"
+        />
+
+</menu>

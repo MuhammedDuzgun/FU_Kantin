@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FU Kantin</string>
+    <string name="hyperlink_patreon">Patreon ile bize <a href="https://www.patreon.com/GundemGaming">destek ol</a></string>
+    <string name="papara">Papara ile destek ol :</string>
+    <string name="papara_no">1412537112</string>
+
+    <string name="username_rule_1">* Kullanıcı adı yalnızca küçük harfler ve rakamlardan oluşur. Boşluk yerine nokta ve alt tire kullanabilirsiniz.</string>
+    <string name="hyperlink_user_agreement">Kullanıcı sözleşmesini okudum, <a href="https://gundemgaming.com/gundemgaming/fukantin/UserAgreement.html">kabul ediyorum.</a></string>
+
+
+</resources>

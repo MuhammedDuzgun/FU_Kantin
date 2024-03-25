@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "767060680513",
+    "project_id": "fu-kantin",
+    "storage_bucket": "fu-kantin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:767060680513:android:c1ffa8dc06c0176fa10bc0",
+        "android_client_info": {
+          "package_name": "com.gundemgaming.fukantin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAeUOFxtIPef1veKpLzElXcai3BYDQZLBk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

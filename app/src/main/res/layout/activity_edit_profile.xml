@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/CL_EDIT_PROFILE"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfileActivity">
+
+    <TextView
+        android:id="@+id/textViewDepartment_EP"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/tahoma"
+        android:text="Fakülte Seçilmedi"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonChooseDepartment"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonSaveInstagram" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlinedTextField_Bio"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Bio"
+
+        app:counterEnabled="true"
+        app:counterMaxLength="50"
+        app:counterOverflowTextColor="@color/red"
+        app:helperText="Max 50 karakter ve 3 satır"
+        app:helperTextEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextBio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="A BCÇDEFGĞHIİJKLMNOÖPRSŞTUÜVWXYZabcçdefgğhıijklmnoöpqrsştuüvwxyz1234567890#{[]}\|!'^+%/()=?_*;~.,@₺-:÷×€$"
+            android:maxLength="50"
+            android:maxLines="3" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/tahoma"
+        android:text="Profil Düzenle"
+        android:textColor="#000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlinedTextField_Instagram"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Instagram"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:counterOverflowTextColor="@color/red"
+        app:endIconMode="clear_text"
+        app:helperText="Kullanıcı adınızı giriniz"
+        app:helperTextEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonSaveBio">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextInstagram"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="A BCÇDEFGĞHIİJKLMNOÖPRSŞTUÜVWXYZabcçdefgğhıijklmnoöpqrsştuüvwxyz1234567890#{[]}\|!'^+%/()=?_*;~.,@₺-:÷×€$"
+            android:maxLength="20"
+            android:maxLines="1" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/buttonChooseDepartment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Fakülte Seç"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonSaveInstagram" />
+
+    <Button
+        android:id="@+id/buttonDeleteAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Hesabı Sil"
+        app:layout_constraintBottom_toTopOf="@+id/adviewBanner_EDIT_PROFILE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adviewBanner_EDIT_PROFILE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-2912013575169419/8812236074"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+    </com.google.android.gms.ads.AdView>
+
+    <ImageButton
+        android:id="@+id/imageButtonSaveBio"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/outlinedTextField_Bio"
+        app:srcCompat="@drawable/done" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/tahoma"
+        android:text="Değilşiklikleri Kaydet"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonSaveBio"
+        app:layout_constraintTop_toBottomOf="@+id/outlinedTextField_Bio" />
+
+    <ImageButton
+        android:id="@+id/imageButtonSaveInstagram"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/outlinedTextField_Instagram"
+        app:srcCompat="@drawable/done" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/tahoma"
+        android:text="Değişiklikleri Kaydet"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonSaveInstagram"
+        app:layout_constraintTop_toBottomOf="@+id/outlinedTextField_Instagram" />
+
+    <ImageButton
+        android:id="@+id/imageButtonSaveDepartment"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDepartment_EP"
+        app:srcCompat="@drawable/done" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/tahoma"
+        android:text="Değişiklikleri Kaydet"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonSaveDepartment"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDepartment_EP" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
